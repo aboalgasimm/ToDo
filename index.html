@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button id="toggle-night" style="position: absolute; top: 20px; right: 20px;">Night Mode 🌙</button>
+    <h1>Welcome to The Best ToDo website you'll ever see!</h1>
+  <div class="container">
+   
+
+    <div class="input-group">
+        <input type="text" id="todoInput" class="input-large" placeholder="Here you can add your tasks">
+      <button onclick="addTodo()">Add</button>
+    </div>
+
+    <input type="text" id="searchInput" class="input-large search-bar" placeholder="Use this to search for your tasks" oninput="searchTodos()">
+
+    <ul id="todoList"></ul>
+
+    <div id="counter">The total number of tasks is: 0</div>
+  </div>
+
+  <footer class="simple-footer">
+    <div class="simple-footer-container">
+        Your Favourite ToDo website, Developed by <a href="https://github.com/aboalgasimm" class="simple-footer-link" target="_blank">Abuelgasim</a>
+    </div>
+  </footer>
+  <script src="file.js"></script>
+</body>
+</html>

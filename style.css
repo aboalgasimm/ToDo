@@ -1,0 +1,237 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.container {
+    flex: 1 0 auto;
+}
+.footer {
+    flex-shrink: 0;
+}
+body {
+    font-family: sans-serif;
+    background: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+    color: #079585;
+  }
+  .container {
+    max-width: 500px;
+    margin: 40px auto;
+    background: #23272f;
+    padding: 25px 20px 20px 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 16px #ccc;
+}
+  .input-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 18px;
+}  
+  input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    border: 1.5px solid #aaa;
+    border-radius: 6px;
+    font-size: 1em;
+}  
+  button {
+    padding: 8px 12px;
+    border: none;
+    background: #007bff;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background 0.3s;
+}
+  button:hover {
+    background: #079585;
+}
+.search-bar {
+    margin-bottom: 18px;
+    width: 100%;
+    display: block;
+}
+.input-large {
+    width: 100%;
+    padding: 16px;
+    border: 2px solid #aaa;
+    border-radius: 8px;
+    font-size: 1.3em;
+    box-sizing: border-box;
+    margin-bottom: 0;
+} 
+ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 18px;
+}  
+li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 12px;
+    background: #f8f8f8;
+    border-radius: 6px;
+    padding: 10px 12px;
+    box-shadow: 0 2px 6px #eee;
+} 
+li input[type="checkbox"] {
+    margin: 0;
+}  
+li span {
+    flex: 1;
+    color: #079585;
+    font-size: 1.1em;
+}  
+.editing input[type="text"] {
+    flex: 1;
+} 
+#counter {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 1.3em;
+    color: #079585;
+    text-align: center;
+}
+.edit-btn {
+    background: #28a745; 
+    color: #fff;
+}
+.edit-btn:hover {
+    background: #218838;
+}
+.delete-btn {
+    background: #dc3545; 
+    color: #fff;
+}
+.delete-btn:hover {
+    background: #c82333;
+}
+body.night {
+    background: hsl(248, 88%, 3%);
+    color: #e0e0e0;
+}
+body.night .container {
+    background: #23272f;
+    box-shadow: 0 0 16px #111;
+}
+
+body.night input[type="text"],
+body.night .input-large,
+body.night .search-bar {
+    background: #23272f;
+    color: #e0e0e0;
+    border: 1.5px solid #444;
+}
+body.night button,
+body.night .edit-btn,
+body.night .delete-btn {
+    background: #079585;
+    color: #e0e0e0;
+}
+body.night button:hover,
+body.night .edit-btn:hover,
+body.night .delete-btn:hover {
+    background: #079585;
+}
+body.night li {
+    background: #23272f;
+    color: #e0e0e0;
+    box-shadow: 0 2px 6px #222;
+} 
+body.night .edit-btn {
+    background: #28a745; 
+    color: #fff;
+}
+body.night .edit-btn:hover {
+    background: #218838;
+}
+body.night .delete-btn {
+    background: #dc3545; 
+    color: #fff;
+}
+body.night .delete-btn:hover {
+    background: #c82333;
+}
+.footer-link {
+    color: #6bbaff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 999px;
+    padding: 0.2em 0.8em;
+    background: rgba(107,186,255,0.08);
+    transition: color 0.2s, background 0.2s, box-shadow 0.2s;
+    margin-left: 0.3em;
+    box-shadow: 0 2px 8px 0 #6bbaff22;
+    display: inline-block;
+}
+.simple-footer {
+    width: 100%;
+    background: #f3f4f6;
+    padding: 16px 0;
+    margin-top: 32px;
+    border-radius: 16px 16px 16px 16px; /* Only top corners rounded */
+    box-shadow: 0 -2px 12px 0 rgba(44, 62, 80, 0.08);
+    position: relative;
+    bottom: 0;
+    left: 0;
+}
+body.night-mode .simple-footer {
+    background: #232946;
+    color: #eaeaea;
+    border-top: 1.5px solid #35374b;
+}
+.simple-footer-container {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 0.97rem;
+    color: #444;
+    letter-spacing: 0.01em;
+}
+body.night-mode .simple-footer-container {
+    color: #35374b;
+}
+.simple-footer-link {
+    display: inline-block;
+    margin-left: 0em;
+    color: #2563eb;
+    text-decoration: none;
+    font-size: 0.97rem;
+    border-radius: 990px;
+    padding: 0.1em 0.2em;
+    transition: background 0.2s, color 0.2s;
+}
+.simple-footer-link:hover {
+    background: #2563eb;
+    color: #fff;
+    text-decoration: none;
+}
+@media (max-width: 768px) {
+body {
+    padding: 10px;
+}    
+.container {
+    margin: 20px auto;
+    padding: 20px 15px;
+    max-width: 100%;
+}    
+.input-group {
+    flex-direction: column;
+    gap: 8px;
+}    
+input[type="text"] {
+    font-size: 16px; 
+}  
+li {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  } 
+li span {
+   width: 100%;
+ }
+}
